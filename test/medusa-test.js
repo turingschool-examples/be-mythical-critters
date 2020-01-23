@@ -4,21 +4,21 @@ var Person = require('../exercises/person');
 
 describe('Medusa', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Medusa);
   });
 
-  it.skip('should instantiate our good friend, Medusa', function() {
+  it('should instantiate our good friend, Medusa', function() {
     var medusa = new Medusa();
     assert.isObject(medusa);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var medusa = new Medusa('Bree');
     assert.equal(medusa.name, 'Bree');
   });
 
-  it.skip('should start with no statues', function() {
+  it('should start with no statues', function() {
     var medusa = new Medusa('Taytay');
     assert.equal(medusa.name, 'Taytay');
     assert.deepEqual(medusa.statues, []);
@@ -26,7 +26,7 @@ describe('Medusa', function() {
 
   // Pass first 3 tests for Person down below
 
-  it.skip('should gain a statue when staring at a person', function() {
+  it('should gain a statue when staring at a person', function() {
     var medusa = new Medusa('Brenna');
     var victim = new Person('Jhun');
 
@@ -37,7 +37,7 @@ describe('Medusa', function() {
 
   });
 
-  it.skip('should only be able to have three victims as a statue', function() {
+  it('should only be able to have three victims as a statue', function() {
     var medusa = new Medusa('Meeka');
     var victim1 = new Person('Lousia');
     var victim2 = new Person('Bree');
@@ -52,7 +52,7 @@ describe('Medusa', function() {
     assert.equal(medusa.statues.length, 3);
   });
 
-  it.skip('should unstone the the first victim and stone the 4th coming in', function() {
+  it('should unstone the the first victim and stone the 4th coming in', function() {
     var medusa = new Medusa('Meeka');
     var victim1 = new Person('Lousia');
     var victim2 = new Person('Bree');
@@ -77,21 +77,21 @@ describe('Medusa', function() {
 
 describe('Person', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Person);
   });
 
-  it.skip('should instantiate our good friend, Person', function() {
+  it('should instantiate our good friend, Person', function() {
     var person = new Person();
     assert.isObject(person);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var person = new Person('Steve');
     assert.equal(person.name, 'Steve');
   });
 
-  it.skip('should be stoned after looking into Medusas eyes', function() {
+  it('should be stoned after looking into Medusas eyes', function() {
     var medusa = new Medusa('Brenna');
     var victim = new Person('Jhun');
 
