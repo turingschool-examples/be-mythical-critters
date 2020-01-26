@@ -107,7 +107,6 @@ describe('Sphinx', function() {
     sphinx.collectRiddle(riddle1);
     sphinx.collectRiddle(riddle2);
     var response = sphinx.attemptAnswer('short');
-
     assert.equal(response, 'That wasn\'t that hard, I bet you don\'t get the next one');
   });
 
