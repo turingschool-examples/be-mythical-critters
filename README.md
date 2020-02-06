@@ -58,6 +58,7 @@ If you've done the critters above and feel comfortable with those, try conquerin
 * `hobbit`
 * `pirate`
 * `wizard`
+* `witch` (HARD)
 
 ### Extra Challenges
 
